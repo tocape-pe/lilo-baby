@@ -188,11 +188,11 @@ export const Season = () => (
 
 /* 6 · Editorial: taller + bordado */
 export const Editorial = () => (
-  <section id="personaliza" className="px-2 md:px-6 pb-20 md:pb-16 flex flex-col md:flex-row gap-4 scroll-mt-20">
-    <img src={IMG.costura} alt="Cosiendo un set de protectores en el taller de Lilo Baby" loading="lazy" className="w-full md:w-[580px] aspect-[580/711] object-cover" />
-    <div className="md:w-[336px] px-2 md:px-0">
-      <img src={IMG.almohada} alt="Almohada beige con el nombre Aitana bordado en rosado" loading="lazy" className="w-full aspect-[336/420] object-cover" />
-      <p className="mt-6 text-[16px] font-light leading-[1.35]">
+  <section id="personaliza" className="px-2 md:px-6 pb-20 md:pb-16 grid grid-cols-1 md:grid-cols-2 gap-4 scroll-mt-20">
+    <img src={IMG.costura} alt="Cosiendo un set de protectores en el taller de Lilo Baby" loading="lazy" className="w-full aspect-[4/5] object-cover" />
+    <div className="text-center">
+      <img src={IMG.almohada} alt="Almohada beige con el nombre Aitana bordado en rosado" loading="lazy" className="w-full aspect-[4/5] object-cover" />
+      <p className="mt-6 mx-auto max-w-[460px] px-2 text-[16px] font-light leading-[1.35]">
         Su nombre, bordado a mano. Elige la letra, el color del hilo y un detalle: corazón, banderín o mariposa.
       </p>
       <a href={waProduct("Almohada personalizada con su nombre")} target="_blank" rel="noopener" className={`${linkUnder} inline-block mt-3`}>
