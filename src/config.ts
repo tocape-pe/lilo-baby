@@ -8,8 +8,9 @@ export const STORE = {
   shipping: "Envíos a todo el Perú por Shalom",
 };
 
+// api.whatsapp.com directo: la redirección de wa.me cambia los emojis como 🤍 por "�"
 export const waLink = (message: string) =>
-  `https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(message)}`;
+  `https://api.whatsapp.com/send?phone=${STORE.whatsapp}&text=${encodeURIComponent(message)}`;
 
 export const waProduct = (product: string) =>
   waLink(`¡Hola Lilo Baby! 🤍 Me interesa: ${product}. ¿Me pasan precio y colores disponibles?`);
