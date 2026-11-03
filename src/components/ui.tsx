@@ -29,13 +29,17 @@ export const useCarousel = () => {
   return { ref, edge, update, go };
 };
 
+// Flechas sobre círculo beige (color sand de la web) para que se vean bien
+const arrowBtn =
+  "w-10 h-10 rounded-full bg-[#e9e1d6] text-ink flex items-center justify-center hover:bg-[#ddd2c3] transition-colors disabled:opacity-40 disabled:hover:bg-[#e9e1d6]";
+
 export const Arrows = ({ c }: { c: ReturnType<typeof useCarousel> }) => (
-  <div className="hidden md:flex items-center gap-4">
-    <button onClick={() => c.go(-1)} disabled={c.edge.start} aria-label="Anterior" className="p-1 disabled:opacity-25">
-      <ChevronLeft size={18} strokeWidth={1.5} />
+  <div className="hidden md:flex items-center gap-2">
+    <button onClick={() => c.go(-1)} disabled={c.edge.start} aria-label="Anterior" className={arrowBtn}>
+      <ChevronLeft size={18} strokeWidth={2} />
     </button>
-    <button onClick={() => c.go(1)} disabled={c.edge.end} aria-label="Siguiente" className="p-1 disabled:opacity-25">
-      <ChevronRight size={18} strokeWidth={1.5} />
+    <button onClick={() => c.go(1)} disabled={c.edge.end} aria-label="Siguiente" className={arrowBtn}>
+      <ChevronRight size={18} strokeWidth={2} />
     </button>
   </div>
 );
