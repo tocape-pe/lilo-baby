@@ -1,0 +1,332 @@
+[
+ {
+  "slug": "conjunto-01",
+  "foto": "p40_00",
+  "pagina": 40,
+  "descripcion": "Set de polera + jogger interior afranelado + chaleco polar",
+  "talla": "1 año",
+  "precio": 45,
+  "largo": "Largo de pantalón: 42 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-02",
+  "foto": "p40_02",
+  "pagina": 40,
+  "descripcion": "Set de polito tela wafer + overol tipo corduroy delgado",
+  "talla": "2 años",
+  "precio": 40,
+  "largo": "Largo de overol (hombro a tobillo): 72 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-03",
+  "foto": "p40_04",
+  "pagina": 40,
+  "descripcion": "Set polito algodón + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 51 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-04",
+  "foto": "p40_06",
+  "pagina": 40,
+  "descripcion": "Set camisa + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 52 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-05",
+  "foto": "p41_00",
+  "pagina": 41,
+  "descripcion": "Set polito algodón + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 55 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-06",
+  "foto": "p41_02",
+  "pagina": 41,
+  "descripcion": "Set polera + jogger interior afranelado con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 53 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-07",
+  "foto": "p41_04",
+  "pagina": 41,
+  "descripcion": "Set polera polar + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 53 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-08",
+  "foto": "p41_06",
+  "pagina": 41,
+  "descripcion": "Set polera suave al tacto + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 54 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-09",
+  "foto": "p42_00",
+  "pagina": 42,
+  "descripcion": "Set de camisa tela wafer y algodón + pantalón jean con elástico en cintura y tobillo",
+  "talla": "2-3 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 57 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-10",
+  "foto": "p42_02",
+  "pagina": 42,
+  "descripcion": "Set polera + jogger interior afranelado con elástico en cintura",
+  "talla": "3 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 57 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-11",
+  "foto": "p42_04",
+  "pagina": 42,
+  "descripcion": "Set polera + pantalón jean con elástico en cintura + morralito",
+  "talla": "3-4 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 56 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-12",
+  "foto": "p42_06",
+  "pagina": 42,
+  "descripcion": "Set casaca franela con forro + jogger interior afranelado con elástico en cintura",
+  "talla": "4-5 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 63.5 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-13",
+  "foto": "p43_00",
+  "pagina": 43,
+  "descripcion": "Set camisa algodonada + jean con elástico en cintura",
+  "talla": "5-6 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 66 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-14",
+  "foto": "p43_02",
+  "pagina": 43,
+  "descripcion": "Set polo + jean ligero con elástico en cintura",
+  "talla": "6 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 67 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-15",
+  "foto": "p43_04",
+  "pagina": 43,
+  "descripcion": "Set camiseta + jogger algodón ligero con elástico en cintura",
+  "talla": "6-7 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 70 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-16",
+  "foto": "p43_06",
+  "pagina": 43,
+  "descripcion": "Set casaca + jogger tela ligera",
+  "talla": "6-7 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 69 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-17",
+  "foto": "p44_00",
+  "pagina": 44,
+  "descripcion": "Set polera + jogger interior afranelado con elástico en cintura",
+  "talla": "6-7 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 70 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-18",
+  "foto": "p44_02",
+  "pagina": 44,
+  "descripcion": "Set polera + jogger con elástico en cintura + morralito",
+  "talla": "7-8 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 79 cm",
+  "genero": "nino"
+ },
+ {
+  "slug": "conjunto-19",
+  "foto": "p45_00",
+  "pagina": 45,
+  "descripcion": "Set casaca + jogger en tela plush con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 52 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-20",
+  "foto": "p45_02",
+  "pagina": 45,
+  "descripcion": "Set camisa tela wafer y popelina + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 53 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-21",
+  "foto": "p45_04",
+  "pagina": 45,
+  "descripcion": "Set de polera + jogger + chaleco con capucha en tela felpa",
+  "talla": "2-3 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 55 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-22",
+  "foto": "p45_06",
+  "pagina": 45,
+  "descripcion": "Set camisa tela wafer y popelina + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 55 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-23",
+  "foto": "p46_00",
+  "pagina": 46,
+  "descripcion": "Set blusita + pantalón jean con elástico en cintura",
+  "talla": "2-3 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 55 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-24",
+  "foto": "p46_02",
+  "pagina": 46,
+  "descripcion": "Set blusita + top algodón + pantalón jean con elástico en cintura y detalle en basta",
+  "talla": "4 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 59 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-25",
+  "foto": "p46_04",
+  "pagina": 46,
+  "descripcion": "Set cafarena + chalequito peluche + pantalón corduroy delgado con elástico en cintura y detalle en basta + carterita",
+  "talla": "4 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 60 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-26",
+  "foto": "p46_06",
+  "pagina": 46,
+  "descripcion": "Set cafarena + chalequito peluche + pantalón corduroy delgado con elástico en cintura + carterita",
+  "talla": "4-5 años",
+  "precio": 43,
+  "largo": "Largo de pantalón: 63 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-27",
+  "foto": "p47_00",
+  "pagina": 47,
+  "descripcion": "Set camiseta + pantalón palazo, tela ligera",
+  "talla": "5-6 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 66 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-28",
+  "foto": "p47_02",
+  "pagina": 47,
+  "descripcion": "Set blusita + pantalón jean con elástico en cintura y detalle bordado",
+  "talla": "5-6 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 65 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-29",
+  "foto": "p47_04",
+  "pagina": 47,
+  "descripcion": "Set camisa + pantalón acampanado con elástico en cintura en corduroy delgado",
+  "talla": "5-6 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 65 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-30",
+  "foto": "p47_06",
+  "pagina": 47,
+  "descripcion": "Set polo + pantalón jean con elástico en cintura y detalle lazos",
+  "talla": "5-6 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 63 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-31",
+  "foto": "p48_00",
+  "pagina": 48,
+  "descripcion": "Set camiseta + pantalón jean con elástico en cintura",
+  "talla": "6 años",
+  "precio": 45,
+  "largo": "Largo de pantalón: 65 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-32",
+  "foto": "p48_02",
+  "pagina": 48,
+  "descripcion": "Set polera + pantalón palazo con elástico en cintura con interior afranelado",
+  "talla": "6-7 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 70 cm",
+  "genero": "nina"
+ },
+ {
+  "slug": "conjunto-33",
+  "foto": "p48_04",
+  "pagina": 48,
+  "descripcion": "Set polera + pantalón palazo con elástico en cintura, detalle pompones",
+  "talla": "7-8 años",
+  "precio": 40,
+  "largo": "Largo de pantalón: 74 cm",
+  "genero": "nina"
+ }
+]

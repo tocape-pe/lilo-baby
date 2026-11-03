@@ -1,28 +1,32 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AnnouncementBar, Header } from "@/components/Header";
-import { Banner, BestSellers, Categories, Details, Editorial, Feature, Halves, Hero, Intro, Palette, Season } from "@/components/Sections";
 import { Footer, WhatsAppFloat } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ui";
+import Home from "@/pages/Home";
+import Category from "@/pages/Category";
+import Product from "@/pages/Product";
+import Colors from "@/pages/Colors";
+import Guide from "@/pages/Guide";
+import NotFound from "@/pages/NotFound";
 
-// Mismo orden de secciones que la portada de referencia
 const App = () => (
-  <>
+  <BrowserRouter>
+    <ScrollToTop />
     <AnnouncementBar />
     <Header />
     <main>
-      <Hero />
-      <Intro />
-      <BestSellers />
-      <Feature />
-      <Palette />
-      <Season />
-      <Editorial />
-      <Categories />
-      <Banner />
-      <Halves />
-      <Details />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/categoria/:slug" element={<Category />} />
+        <Route path="/producto/:slug" element={<Product />} />
+        <Route path="/colores" element={<Colors />} />
+        <Route path="/guia-de-medidas" element={<Guide />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </main>
     <Footer />
     <WhatsAppFloat />
-  </>
+  </BrowserRouter>
 );
 
 export default App;

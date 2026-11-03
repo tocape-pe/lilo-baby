@@ -1,5 +1,5 @@
 """Capturas por tramos del sitio local (desktop 1440x900 y móvil 390x844) + chequeo de desborde horizontal.
-Uso: PYTHONUTF8=1 python scripts/capturas.py [url]
+Uso: PYTHONUTF8=1 python scripts/capturas.py [ruta] [prefijo]   (ej. /producto/protector-cuna-clasico prod)
 """
 import os
 import sys
@@ -7,14 +7,16 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-URL = sys.argv[1] if len(sys.argv) > 1 else "http://localhost:4180/"
+RUTA = sys.argv[1] if len(sys.argv) > 1 else "/"
+URL = RUTA if RUTA.startswith("http") else "http://localhost:4180" + RUTA
+PRE = (sys.argv[2] + "_") if len(sys.argv) > 2 else ""
 OUT = Path(__file__).parent / "capturas"
 OUT.mkdir(exist_ok=True)
 
 with sync_playwright() as p:
     b = p.chromium.launch(channel="msedge")
-    for tag, kw in (("desktop", dict(viewport={"width": 1440, "height": 900})),
-                    ("movil", dict(viewport={"width": 390, "height": 844}, device_scale_factor=2, is_mobile=True, has_touch=True))):
+    for tag, kw in ((PRE + "desktop", dict(viewport={"width": 1440, "height": 900})),
+                    (PRE + "movil", dict(viewport={"width": 390, "height": 844}, device_scale_factor=2, is_mobile=True, has_touch=True))):
         pg = b.new_page(**kw)
         pg.goto(URL, wait_until="networkidle")
         h = pg.evaluate("document.documentElement.scrollHeight")
