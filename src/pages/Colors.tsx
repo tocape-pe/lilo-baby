@@ -1,23 +1,26 @@
 import { Link } from "react-router-dom";
 import { COLOR_CHARTS } from "@/data";
-import { Breadcrumb, useTitle } from "@/components/ui";
+import { Breadcrumb, PastelHeader, useTitle } from "@/components/ui";
 
 const Colors = () => {
   useTitle("Colores y estampados");
   return (
-    <div className="px-5 md:px-10 lg:px-16 pt-8 pb-24">
-      <Breadcrumb items={[{ label: "Inicio", to: "/" }, { label: "Colores y estampados" }]} />
-      <h1 className="mt-6 md:mt-10 font-serif font-light text-[44px] md:text-[64px] leading-[0.95]">Colores y estampados</h1>
-      <p className="mt-4 max-w-[640px] text-[16px] md:text-[18px] leading-[1.4] text-ink-soft">
-        Cartillas del catálogo 2026. Cuéntanos por WhatsApp el color o el número de estampado que elegiste.
-      </p>
-      <nav className="mt-8 flex flex-wrap gap-2 text-[14px]">
+    <>
+    <PastelHeader
+      title="Colores y estampados"
+      description="Cartillas del catálogo 2026. Cuéntanos por WhatsApp el color o el número de estampado que elegiste."
+      image={COLOR_CHARTS[0].images[0].src}
+      breadcrumb={<Breadcrumb items={[{ label: "Inicio", to: "/" }, { label: "Colores y estampados" }]} />}
+    >
+      <nav className="mt-6 flex flex-wrap gap-2 text-[14px]">
         {COLOR_CHARTS.map((c) => (
-          <a key={c.key} href={`#c-${c.key}`} className="h-10 px-4 inline-flex items-center border border-black/15 hover:border-ink">
+          <a key={c.key} href={`#c-${c.key}`} className="h-10 px-4 rounded-full inline-flex items-center border border-black/15 bg-white/70 hover:border-ink">
             {c.title}
           </a>
         ))}
       </nav>
+    </PastelHeader>
+    <div className="px-5 md:px-10 lg:px-16 pb-24">
       {COLOR_CHARTS.map((c) => (
         <section key={c.key} id={`c-${c.key}`} className="mt-16 scroll-mt-24">
           <h2 className="font-serif font-light text-[30px] leading-[1.1]">{c.title}</h2>
@@ -38,6 +41,7 @@ const Colors = () => {
         <Link to="/" className="underline underline-offset-4">Volver a la tienda</Link>
       </p>
     </div>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { STORE, waLink } from "@/config";
 import { BEST_SELLERS, CATEGORIES, COLOR_CHARTS, getProduct, IMG, productsIn, TRABAJOS, type Product } from "@/data";
-import { Arrows, btnDark, btnLight, linkUnder, ProductCard, useCarousel, useTitle } from "@/components/ui";
+import { Arrows, btnDark, btnLight, linkUnder, ProductCard, RefBadge, useCarousel, useTitle } from "@/components/ui";
 
 const img = (n: string) => `/img/cat/${n}.jpg`;
 
@@ -27,7 +27,8 @@ const Hero = () => (
         <Link to="/producto/almohada-modelo-banderin" className="overflow-hidden aspect-[4/5]">
           <img src={img("almohada-aitana")} alt="Almohada Aitana bordada con banderín y osito lila" className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-700" />
         </Link>
-        <Link to="/producto/protector-cuna-clasico" className="overflow-hidden aspect-[4/5]">
+        <Link to="/producto/protector-cuna-clasico" className="relative overflow-hidden aspect-[4/5]">
+          <RefBadge src={img("clasico-op1")} />
           <img src={img("clasico-op1")} alt="Protector clásico gris con lazos celestes" className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-700" />
         </Link>
       </div>
@@ -50,7 +51,8 @@ const Categories = () => (
     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
       {CATEGORIES.map((c) => (
         <Link key={c.slug} to={`/categoria/${c.slug}`} className="group block">
-          <div className="aspect-[3/4] bg-card overflow-hidden">
+          <div className="relative aspect-[3/4] bg-card overflow-hidden">
+            <RefBadge src={c.image} />
             <img src={c.image} alt={c.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
           </div>
           <p className="mt-2 text-[14px] group-hover:underline underline-offset-4">{c.name}</p>
@@ -65,14 +67,14 @@ const BestSellers = () => {
   const c = useCarousel();
   const items = BEST_SELLERS.map(getProduct).filter(Boolean) as Product[];
   return (
-    <section className="pl-4 md:pl-16 lg:pl-32 pb-20 md:pb-32">
-      <div className="flex items-center justify-between pr-4 md:pr-16 lg:pr-32 mb-5">
+    <section className="max-w-[1280px] mx-auto px-5 md:px-10 pb-20 md:pb-32">
+      <div className="flex items-center justify-between mb-5">
         <h2 className="text-[18px] text-ink-soft">Los más pedidos</h2>
         <Arrows c={c} />
       </div>
-      <div ref={c.ref} onScroll={c.update} className="flex gap-2 overflow-x-auto no-scrollbar snap-x snap-mandatory pr-4 md:pr-16 lg:pr-32">
+      <div ref={c.ref} onScroll={c.update} className="flex gap-2 overflow-x-auto no-scrollbar snap-x snap-mandatory">
         {items.map((p) => (
-          <ProductCard key={p.slug} p={p} className="shrink-0 w-[64vw] md:w-[260px] snap-start" />
+          <ProductCard key={p.slug} p={p} className="shrink-0 w-[64vw] md:w-[calc((100%-1.5rem)/4)] snap-start" />
         ))}
       </div>
     </section>
@@ -121,7 +123,8 @@ const Personaliza = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
         {fotos.map(([f, label]) => (
           <Link key={f} to="/categoria/almohadas-personalizadas" className="group block">
-            <div className="aspect-square bg-white overflow-hidden flex items-center justify-center">
+            <div className="relative aspect-square bg-white overflow-hidden flex items-center justify-center">
+              <RefBadge src={img(f)} />
               <img src={img(f)} alt={label} loading="lazy" className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-[1.03]" />
             </div>
             <p className="mt-2 text-[13px] text-ink-soft">{label}</p>
@@ -158,17 +161,17 @@ const Conjuntos = () => {
   const items = productsIn("conjuntos").slice(0, 8);
   const c = useCarousel();
   return (
-    <section className="pl-4 md:pl-16 lg:pl-32 py-20 md:py-28">
-      <div className="flex items-end justify-between pr-4 md:pr-16 lg:pr-32 mb-6 gap-4">
+    <section className="max-w-[1280px] mx-auto px-5 md:px-10 py-20 md:py-28">
+      <div className="flex items-end justify-between mb-6 gap-4">
         <div>
           <h2 className="font-serif font-light text-[32px] md:text-[40px] leading-[1.1]">Conjuntos · cierre de temporada</h2>
           <p className="mt-2 text-[16px] text-ink-soft">Niños y niñas de 1 a 8 años, desde S/ 40. Por compras del catálogo, llévate cualquier conjunto en S/ 38.</p>
         </div>
         <Arrows c={c} />
       </div>
-      <div ref={c.ref} onScroll={c.update} className="flex gap-2 overflow-x-auto no-scrollbar snap-x snap-mandatory pr-4 md:pr-16 lg:pr-32">
+      <div ref={c.ref} onScroll={c.update} className="flex gap-2 overflow-x-auto no-scrollbar snap-x snap-mandatory">
         {items.map((p) => (
-          <ProductCard key={p.slug} p={p} className="shrink-0 w-[56vw] md:w-[230px] snap-start" />
+          <ProductCard key={p.slug} p={p} className="shrink-0 w-[56vw] md:w-[calc((100%-2rem)/5)] snap-start" />
         ))}
       </div>
       <Link to="/categoria/conjuntos" className={`${linkUnder} inline-block mt-8`}>Ver los 33 conjuntos</Link>

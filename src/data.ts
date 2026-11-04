@@ -545,9 +545,27 @@ export const COLOR_CHARTS: { key: ColorKey; title: string; subtitle: string; ima
 export const TRABAJOS = [1, 2, 3, 4, 5, 6].map((n) => img(`trabajo-${n}`));
 
 export const IMG = {
-  lilito: img("lilito"),
+  lilito: img("bebe-vestido"),
   guia: img("guia-medidas"),
 };
+
+/* Fotos que el catálogo marca como «imagen referencial» (págs. 7, 9, 12, 14, 15, 33–35, 37, 38) */
+const REFERENCIALES = new Set(
+  [
+    "clasico-op1", "clasico-op2", "clasico-op3",
+    "diseno-op1", "diseno-op3a", "diseno-op3b",
+    "enrollable-2", "enrollable-3",
+    "baranda-cuna-2", "baranda-cuna-3", "baranda-cuna-4",
+    "baranda-mont-2", "baranda-mont-3", "baranda-mont-4",
+    "almohada-soguita-walter", "almohada-soguita-terracota",
+    "almohada-vichy-santiago", "almohada-vichy-rayas", "almohada-muselina",
+    "almohada-formas-estrellas", "almohada-formas-nube",
+    "banderin-vichy", "letras-leno", "letras-tomy",
+    "colchoneta-algodon-1", "colchoneta-algodon-2",
+    "colchoneta-muselina-1", "colchoneta-muselina-2", "colchoneta-muselina-3", "colchoneta-muselina-4",
+  ].map(img),
+);
+export const esReferencial = (src?: string) => !!src && REFERENCIALES.has(src);
 
 /* ---------- Helpers ---------- */
 

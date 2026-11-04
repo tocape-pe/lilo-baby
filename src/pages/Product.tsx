@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { STORE, waOrder } from "@/config";
 import { COLOR_CHARTS, getCategory, getProduct, priceOf, productsIn, soles, type Product as P } from "@/data";
-import { Breadcrumb, ProductCard, useTitle } from "@/components/ui";
+import { Breadcrumb, ProductCard, RefBadge, useTitle } from "@/components/ui";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import NotFound from "./NotFound";
 
@@ -28,8 +28,20 @@ const Gallery = ({ p, active }: { p: P; active?: string }) => {
   }, [active]);
   return (
     <div>
-      <div className="bg-card aspect-[4/5] flex items-center justify-center overflow-hidden">
-        <img src={main} alt={p.name} className="max-w-full max-h-full object-contain" />
+      {/* Fondo cálido con degradado y puntitos suaves; la foto ocupa todo el marco y,
+          con mix-blend-multiply, el blanco de las fotos recortadas se funde con el fondo */}
+      <div
+        className="relative aspect-[4/5] overflow-hidden"
+        style={{
+          backgroundColor: "#efe7dc",
+          backgroundImage:
+            "radial-gradient(circle at 50% 42%, #fbf7f1 0%, #f3ece2 45%, #e4d8c8 100%), radial-gradient(rgba(141,94,63,0.10) 1px, transparent 1.2px)",
+          backgroundSize: "100% 100%, 14px 14px",
+          backgroundBlendMode: "multiply",
+        }}
+      >
+        <img src={main} alt={p.name} className="absolute inset-3 md:inset-5 w-[calc(100%-1.5rem)] md:w-[calc(100%-2.5rem)] h-[calc(100%-1.5rem)] md:h-[calc(100%-2.5rem)] object-contain mix-blend-multiply" />
+        <RefBadge src={main} className="right-3 bottom-3 text-[11px]" />
       </div>
       {p.images.length > 1 && (
         <div className="mt-2 grid grid-cols-5 md:grid-cols-6 gap-2">
