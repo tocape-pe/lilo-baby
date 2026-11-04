@@ -69,7 +69,7 @@ export const CATEGORIES: Category[] = [
     name: "Colchoneta para coche + almohada",
     nav: "Colchonetas",
     description: "Comodidad y practicidad para cada paseo de tu bebé, con almohada anticabeza plana.",
-    image: img("colchoneta-bebe"),
+    image: img("colchoneta-algodon-1"),
   },
   {
     slug: "conjuntos",
@@ -442,7 +442,7 @@ const MAIN: Product[] = [
     category: "colchonetas-para-coche",
     name: "Colchoneta para coche + almohada · Algodón 200 hilos",
     short: "Comodidad y practicidad para cada paseo de tu bebé, con almohada anticabeza plana.",
-    images: [img("colchoneta-bebe"), img("colchoneta-algodon-1"), img("colchoneta-algodon-2"), img("colchoneta-mecedora")],
+    images: [img("colchoneta-algodon-1"), img("colchoneta-algodon-2"), img("colchoneta-mecedora")],
     sizes: [{ label: "Universal", medida: "coche y mecedora", price: 130 }],
     details: [
       "Modelo universal, adaptable a diferentes modelos de coche y mecedoras.",
